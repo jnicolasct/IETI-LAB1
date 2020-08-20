@@ -2,6 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import {TodoList} from './TodoList';
+import {TodoApp} from './TodoApp';
 
 function App() {
     const todos = [{text:"Learn React", priority:5, dueDate: new Date(2020,1,28) },
@@ -23,7 +24,7 @@ function App() {
           Learn React
         </a>
       </header>
-      <TodoList todoList={todos}/>
+      <TodoApp />
     </div>
   );
 }
